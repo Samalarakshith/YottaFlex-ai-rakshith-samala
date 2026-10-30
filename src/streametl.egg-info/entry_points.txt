@@ -1,0 +1,2 @@
+[console_scripts]
+streametl = streametl.cli:main

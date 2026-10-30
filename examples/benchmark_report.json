@@ -1,0 +1,10 @@
+{
+  "records_requested": 100000,
+  "chunk_size": 5000,
+  "elapsed_seconds": 4.1531,
+  "pipeline_process_peak_rss_mb": 109.0,
+  "measurement_note": "RSS is sampled for the pipeline process when psutil is installed; short-lived peaks can be missed by polling. Record OS/runtime details when reporting results.",
+  "return_code": 0,
+  "stdout_tail": "{\n  \"run_id\": \"run_20261030T034440_c50b8ef3\",\n  \"status\": \"success\",\n  \"source_file\": \"data/benchmark/orders.csv\",\n  \"format\": \"csv\",\n  \"started_at\": \"2026-10-30T03:44:40Z\",\n  \"ended_at\": \"2026-10-30T03:44:43Z\",\n  \"duration_seconds\": 3.3537,\n  \"input_records\": 100000,\n  \"inserted_records\": 99993,\n  \"duplicate_records\": 0,\n  \"rejected_records\": 7,\n  \"inserted_amount_total\": \"50073955.08\",\n  \"target_amount_total\": \"50073955.08\",\n  \"target_total_records\": 99993,\n  \"accounting_check\": true,\n  \"reconciliation_passed\": true,\n  \"reject_file\": \"data/benchmark/output/rejected/run_20261030T034440_c50b8ef3_rejects.csv\",\n  \"target_file\": \"data/benchmark/output/processed/events.csv\",\n  \"failure_reason\": null,\n  \"notes\": [\n    \"Naive timestamps are interpreted as UTC.\",\n    \"Only USD is accepted in this sample.\",\n    \"Target is append-only by event_id; conflicting payloads are quarantined.\"\n  ]\n}\n",
+  "stderr_tail": ""
+}

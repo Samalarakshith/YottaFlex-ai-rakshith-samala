@@ -1,0 +1,19 @@
+{
+  "compatibility_policy": "backward",
+  "compatible": true,
+  "classification": "non_breaking",
+  "changes": [
+    {
+      "field": "event_type",
+      "change": "allowed_values_added",
+      "severity": "non_breaking",
+      "reason": "Added allowed values: ['refunded']"
+    },
+    {
+      "field": "region",
+      "change": "field_added",
+      "severity": "non_breaking",
+      "reason": "Optional/nullable field added"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "run_id": "run_20261030T034515_c6ab8acd",
+  "status": "success",
+  "source_file": "data/sample/orders.jsonl",
+  "format": "jsonl",
+  "started_at": "2026-10-30T03:45:15Z",
+  "ended_at": "2026-10-30T03:45:15Z",
+  "duration_seconds": 0.0545,
+  "input_records": 1000,
+  "inserted_records": 993,
+  "duplicate_records": 0,
+  "rejected_records": 7,
+  "inserted_amount_total": "499302.89",
+  "target_amount_total": "499302.89",
+  "target_total_records": 993,
+  "accounting_check": true,
+  "reconciliation_passed": true,
+  "reject_file": "examples/results/jsonl/rejected/run_20261030T034515_c6ab8acd_rejects.csv",
+  "target_file": "examples/results/jsonl/processed/events.csv",
+  "failure_reason": null,
+  "notes": [
+    "Naive timestamps are interpreted as UTC.",
+    "Only USD is accepted in this sample.",
+    "Target is append-only by event_id; conflicting payloads are quarantined."
+  ]
+}

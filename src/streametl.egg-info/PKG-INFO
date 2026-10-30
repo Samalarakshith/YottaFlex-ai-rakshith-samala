@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: streametl
+Version: 1.0.0
+Summary: Memory-efficient, observable CSV and JSONL ETL example
+Requires-Python: >=3.10
+Requires-Dist: pandas>=2.0
+Provides-Extra: test
+Requires-Dist: pytest>=7.0; extra == "test"
+Requires-Dist: psutil>=5.9; extra == "test"

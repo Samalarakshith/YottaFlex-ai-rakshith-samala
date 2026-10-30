@@ -1,0 +1,19 @@
+{
+  "compatibility_policy": "backward",
+  "compatible": false,
+  "classification": "breaking",
+  "changes": [
+    {
+      "field": "event_id",
+      "change": "field_removed",
+      "severity": "breaking",
+      "reason": "Existing field removed"
+    },
+    {
+      "field": "amount",
+      "change": "type_changed",
+      "severity": "breaking",
+      "reason": "Type changed from decimal to string"
+    }
+  ]
+}

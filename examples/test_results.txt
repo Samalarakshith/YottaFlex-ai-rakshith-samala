@@ -1,0 +1,6 @@
+Automated test evidence
+======================
+Command: PYTHONPATH=src pytest -q
+Result: 13 passed in 0.23s (development container; rerun locally to confirm).
+
+Coverage includes the original ingestion pipeline scenarios plus contract-level validation, missing/extra batch schema fields, non-breaking optional field evolution, and breaking field removal/type change.

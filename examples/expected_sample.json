@@ -1,0 +1,15 @@
+{
+  "seed": 20261030,
+  "requested_records": 1000,
+  "customers": 201,
+  "injected_cases": {
+    "negative_amount": 1,
+    "unknown_customer": 1,
+    "invalid_timestamp": 1,
+    "missing_event_id": 1,
+    "missing_amount": 1,
+    "invalid_event_type": 1,
+    "duplicate_event_id": 1
+  },
+  "note": "Expected labels are separate from input data; generator outputs are synthetic."
+}

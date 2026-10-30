@@ -1,0 +1,17 @@
+{
+  "contract_name": "events",
+  "version": 1,
+  "compatibility_policy": "backward",
+  "description": "Producer event batch contract for StreamETL.",
+  "primary_key": "event_id",
+  "grain": "one event per event_id",
+  "fields": {
+    "event_id": {"type": "string", "required": true, "nullable": false},
+    "order_id": {"type": "string", "required": true, "nullable": false},
+    "customer_id": {"type": "string", "required": true, "nullable": false},
+    "event_type": {"type": "string", "required": true, "nullable": false, "allowed_values": ["created", "paid", "shipped", "cancelled"]},
+    "amount": {"type": "decimal", "required": true, "nullable": false, "minimum": 0},
+    "currency": {"type": "string", "required": true, "nullable": false, "allowed_values": ["USD"]},
+    "event_timestamp": {"type": "timestamp", "required": true, "nullable": false}
+  }
+}

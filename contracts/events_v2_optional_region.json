@@ -1,0 +1,18 @@
+{
+  "contract_name": "events",
+  "version": 2,
+  "compatibility_policy": "backward",
+  "description": "Example non-breaking evolution: optional nullable region field added.",
+  "primary_key": "event_id",
+  "grain": "one event per event_id",
+  "fields": {
+    "event_id": {"type": "string", "required": true, "nullable": false},
+    "order_id": {"type": "string", "required": true, "nullable": false},
+    "customer_id": {"type": "string", "required": true, "nullable": false},
+    "event_type": {"type": "string", "required": true, "nullable": false, "allowed_values": ["created", "paid", "shipped", "cancelled", "refunded"]},
+    "amount": {"type": "decimal", "required": true, "nullable": false, "minimum": 0},
+    "currency": {"type": "string", "required": true, "nullable": false, "allowed_values": ["USD"]},
+    "event_timestamp": {"type": "timestamp", "required": true, "nullable": false},
+    "region": {"type": "string", "required": false, "nullable": true}
+  }
+}

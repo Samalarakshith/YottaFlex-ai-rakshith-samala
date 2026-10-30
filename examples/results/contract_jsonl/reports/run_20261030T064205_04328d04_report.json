@@ -1,0 +1,45 @@
+{
+  "run_id": "run_20261030T064205_04328d04",
+  "status": "success",
+  "source_file": "data/sample/orders.jsonl",
+  "format": "jsonl",
+  "started_at": "2026-10-30T06:42:05Z",
+  "ended_at": "2026-10-30T06:42:05Z",
+  "duration_seconds": 0.0763,
+  "input_records": 1000,
+  "inserted_records": 993,
+  "duplicate_records": 0,
+  "rejected_records": 7,
+  "contract_validation": {
+    "contract_name": "events",
+    "contract_version": 1,
+    "compatibility_policy": "backward",
+    "compatible": true,
+    "classification": "no_change",
+    "observed_columns": [
+      "event_id",
+      "order_id",
+      "customer_id",
+      "event_type",
+      "amount",
+      "currency",
+      "event_timestamp"
+    ],
+    "missing_required_fields": [],
+    "additional_fields": [],
+    "changes": []
+  },
+  "inserted_amount_total": "499302.89",
+  "target_amount_total": "499302.89",
+  "target_total_records": 993,
+  "accounting_check": true,
+  "reconciliation_passed": true,
+  "reject_file": "examples/results/contract_jsonl/rejected/run_20261030T064205_04328d04_rejects.csv",
+  "target_file": "examples/results/contract_jsonl/processed/events.csv",
+  "failure_reason": null,
+  "notes": [
+    "Naive timestamps are interpreted as UTC.",
+    "Only USD is accepted in this sample.",
+    "Target is append-only by event_id; conflicting payloads are quarantined."
+  ]
+}

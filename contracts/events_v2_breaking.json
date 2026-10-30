@@ -1,0 +1,16 @@
+{
+  "contract_name": "events",
+  "version": 2,
+  "compatibility_policy": "backward",
+  "description": "Example breaking evolution: event_id removed and amount changed to string.",
+  "primary_key": "event_id",
+  "grain": "one event per event_id",
+  "fields": {
+    "order_id": {"type": "string", "required": true, "nullable": false},
+    "customer_id": {"type": "string", "required": true, "nullable": false},
+    "event_type": {"type": "string", "required": true, "nullable": false, "allowed_values": ["created", "paid", "shipped", "cancelled"]},
+    "amount": {"type": "string", "required": true, "nullable": false},
+    "currency": {"type": "string", "required": true, "nullable": false, "allowed_values": ["USD"]},
+    "event_timestamp": {"type": "timestamp", "required": true, "nullable": false}
+  }
+}

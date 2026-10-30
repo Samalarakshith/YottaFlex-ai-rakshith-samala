@@ -1,0 +1,15 @@
+{
+  "measured_in_this_build_environment": {
+    "python": "3.13.5",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+    "records": 100000,
+    "chunk_size": 5000,
+    "elapsed_seconds": 4.1531,
+    "peak_rss_mb": 109.0,
+    "inserted_records": 99993,
+    "rejected_records": 7,
+    "target_amount_total": "50073955.08",
+    "reconciliation_passed": true
+  },
+  "note": "Measurements are environment-specific. Re-run scripts/benchmark.py on the submission machine and report those results rather than assuming the same runtime or memory."
+}
